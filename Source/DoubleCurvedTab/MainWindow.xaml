@@ -1,6 +1,9 @@
 ﻿<Window x:Class="DoubleCurvedTab.MainWindow"
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+		mc:Ignorable="PresentationOptions"
 		Title="Double Curved Tab"
 		Height="200" Width="400">
 	<Window.Resources>
@@ -8,7 +11,9 @@
 		<SolidColorBrush x:Key="Tab.Selected.Background" Color="Green"/>
 		<SolidColorBrush x:Key="Tab.Selected.Foreground" Color="White"/>
 
-		<PathGeometry x:Key="DoubleCurved" Figures="M 20,40 L 0,40 0,40 C 4,40 10,36 10,30 L 10,10 C 10,0 16,0 20,0"/>
+		<PathGeometry x:Key="DoubleCurved"
+					  Figures="M 20,40 L 0,40 0,40 C 4,40 10,36 10,30 L 10,10 C 10,0 16,0 20,0"
+					  PresentationOptions:Freeze="True"/>
 
 		<Style TargetType="{x:Type TabItem}">
 			<Setter Property="Background" Value="Transparent"/>
