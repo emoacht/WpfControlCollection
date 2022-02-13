@@ -2,11 +2,19 @@
 
 A collection of WPF controls such as ProgressBar.
 
-## ProgressBar
+## Label
+
+### Reversal Label
+
+![Screenshot](Images/ReversalLabel.png)
+
+## TabControl
 
 ### Double Curved Tab
 
 ![Screenshot](Images/DoubleCurvedTab.png)
+
+## ProgressBar
 
 ### Striped ProgressBar
 
