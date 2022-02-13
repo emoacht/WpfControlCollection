@@ -1,0 +1,34 @@
+﻿<Window x:Class="ReversalLabelDemo.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:ReversalLabelDemo"
+		Title="Reversal Label"
+		Height="200" Width="400">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<Rectangle Grid.RowSpan="2"
+				   Width="8" HorizontalAlignment="Center"
+				   Fill="LimeGreen"/>
+
+		<Grid Margin="0,16,0,8">
+			<Rectangle Height="8" VerticalAlignment="Center"
+					   Fill="LimeGreen"/>
+			<local:ReversalLabel Padding="12,6" CornerRadius="12"
+								 FontFamily="Tahoma" FontWeight="ExtraBold" FontSize="50"
+								 Text="AefgmW/012"/>
+		</Grid>
+
+		<Grid Grid.Row="1">
+			<Rectangle Height="4" VerticalAlignment="Center"
+					   Fill="LimeGreen"/>
+			<local:ReversalLabel Padding="16,4" CornerRadius="20"
+								 Background="#DDFF0000"
+								 FontFamily="Impact" FontWeight="Normal" FontSize="30" TextElement.FontStretch="Expanded"
+								 Text="CAUTION"/>
+		</Grid>
+	</Grid>
+</Window>
