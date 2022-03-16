@@ -3,7 +3,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:local="clr-namespace:FlaskProgressBarDemo"
 		Title="Flask ProgressBar"
-		Height="300" Width="400">
+		Width="400" Height="300">
 	<Window.Resources>
 		<ControlTemplate x:Key="FlaskProgressBarTemplate" TargetType="{x:Type local:FlaskProgressBar}">
 			<ControlTemplate.Resources>
@@ -20,10 +20,10 @@
 						  StrokeThickness="8"
 						  Stroke="{StaticResource OutlineBrush}">
 						<Path.Data>
-							<PathGeometry Figures="M 20,0 L 20,60 0,100 60,100 40,60 40,0 Z"/>
+							<PathGeometry Figures="M 20,0 L 20,60 L 7.5,82 C 4,88 -4,100 16,100 L 44,100 C 64,100 56,88 52.5,82 L 40,60 40,0 Z"/>
 						</Path.Data>
 					</Path>
-					<!-- Draw vacent area -->
+					<!-- Draw vacant area -->
 					<Path Data="{Binding Data, ElementName=Outline}"
 						  Fill="{TemplateBinding Background}">
 						<Path.Clip>
@@ -43,18 +43,25 @@
 	</Window.Resources>
 
 	<Grid>
-		<StackPanel>
-			<local:FlaskProgressBar x:Name="Bar"
-									Template="{StaticResource FlaskProgressBarTemplate}"
-									HorizontalAlignment="Center"
-									Foreground="Orange"
-									Minimum="0" Maximum="100"
-									Value="50"/>
+		<local:FlaskProgressBar x:Name="Bar"
+								Template="{StaticResource FlaskProgressBarTemplate}"
+								HorizontalAlignment="Center"
+								Foreground="Orange"
+								Minimum="0" Maximum="100"
+								Value="50"
+								RenderTransformOrigin="0.5 0.5">
+			<local:FlaskProgressBar.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1.6" ScaleY="1.6"/>
+					<TranslateTransform Y="120"/>
+				</TransformGroup>
+			</local:FlaskProgressBar.RenderTransform>
+		</local:FlaskProgressBar>
 
-			<Slider x:Name="Slider"
-					Margin="20,0"
-					Minimum="0" Maximum="100"
-					Value="{Binding ElementName=Bar, Path=Value, Mode=TwoWay}"/>
-		</StackPanel>
+		<Slider x:Name="Slider"
+				VerticalAlignment="Top"
+				Margin="20,0"
+				Minimum="0" Maximum="100"
+				Value="{Binding ElementName=Bar, Path=Value, Mode=TwoWay}"/>
 	</Grid>
 </Window>
