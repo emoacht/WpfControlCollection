@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoundProgressBar", "RoundPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleCurvedTab", "DoubleCurvedTab\DoubleCurvedTab.csproj", "{D6E95329-D828-4EA1-9026-E4D9CB0811E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversalLabel", "ReversalLabel\ReversalLabel.csproj", "{21E1EB8D-1E31-4A3C-8AAC-2D33FC8771DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReversalLabel", "ReversalLabel\ReversalLabel.csproj", "{21E1EB8D-1E31-4A3C-8AAC-2D33FC8771DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaskProgressBar", "FlaskProgressBar\FlaskProgressBar.csproj", "{57177110-4E16-4E2D-973B-2D0B866883BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{21E1EB8D-1E31-4A3C-8AAC-2D33FC8771DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21E1EB8D-1E31-4A3C-8AAC-2D33FC8771DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21E1EB8D-1E31-4A3C-8AAC-2D33FC8771DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57177110-4E16-4E2D-973B-2D0B866883BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57177110-4E16-4E2D-973B-2D0B866883BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57177110-4E16-4E2D-973B-2D0B866883BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57177110-4E16-4E2D-973B-2D0B866883BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
