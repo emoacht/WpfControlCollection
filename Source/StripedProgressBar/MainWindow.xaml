@@ -1,8 +1,8 @@
 ﻿<Window x:Class="StripedProgressBar.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:StripedProgressBar"
-        Title="Striped ProgressBar"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:StripedProgressBar"
+		Title="Striped ProgressBar"
 		Height="300" Width="400">
 	<Window.Resources>
 		<SolidColorBrush x:Key="ProgressBar.Background" Color="#FFE6E6E6"/>
