@@ -2,6 +2,10 @@
 
 A collection of WPF controls such as ProgressBar.
 
+## Dial
+
+![Screenshot](Images/Dial.png)
+
 ## Label
 
 ### Reversal Label
