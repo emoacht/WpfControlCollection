@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlaskProgressBar", "FlaskPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dial", "Dial\Dial.csproj", "{A6DF9D77-CC44-45DF-9ECA-126D3F1C3015}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatGridView", "FlatGridView\FlatGridView.csproj", "{ECCEB941-9521-4A6D-BEB8-448050F29EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatGridView", "FlatGridView\FlatGridView.csproj", "{ECCEB941-9521-4A6D-BEB8-448050F29EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCaret", "CustomCaret\CustomCaret.csproj", "{72C4487D-D38B-42EE-9097-98A7469016DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{ECCEB941-9521-4A6D-BEB8-448050F29EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECCEB941-9521-4A6D-BEB8-448050F29EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECCEB941-9521-4A6D-BEB8-448050F29EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C4487D-D38B-42EE-9097-98A7469016DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C4487D-D38B-42EE-9097-98A7469016DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C4487D-D38B-42EE-9097-98A7469016DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C4487D-D38B-42EE-9097-98A7469016DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
