@@ -35,9 +35,7 @@ namespace InsertableList
 
 		private void Remove(MemberViewModel m)
 		{
-			int index = Members.IndexOf(m);
-			if (index >= 0)
-				Members.RemoveAt(index);
+			Members.Remove(m);
 		}
 	}
 
