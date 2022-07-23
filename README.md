@@ -38,6 +38,8 @@ This is inspired by [Customizing the Caret of a WPF TextBox](https://www.codepro
 
 ### Insertable List
 
+### Switchable ComboBox
+
 ## License
 
  - MIT License
