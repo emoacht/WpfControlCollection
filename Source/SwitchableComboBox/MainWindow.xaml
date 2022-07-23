@@ -1,0 +1,97 @@
+﻿<Window x:Class="SwitchableComboBox.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:SwitchableComboBox"
+		mc:Ignorable="d"
+		Title="Switchable ComboBox"
+		Width="400" Height="300">
+	<Window.DataContext>
+		<local:MainWindowViewModel/>
+	</Window.DataContext>
+
+	<StackPanel>
+		<ListView ItemsSource="{Binding Members}">
+			<ListView.View>
+				<GridView>
+					<GridView.Columns>
+						<GridViewColumn Header="Name" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<TextBlock Text="{Binding Name, Mode=OneTime}"/>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+
+						<GridViewColumn Header="Rank" Width="100">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<TextBlock Text="{Binding Rank, Mode=OneWay}"/>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+
+						<GridViewColumn Header="Edit Rank" Width="120">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<ContentControl>
+										<ContentControl.Template>
+											<ControlTemplate TargetType="{x:Type ContentControl}">
+												<Grid>
+													<!-- local:MouseFocusableTextBlock cannot keep focus on itself. -->
+													<TextBox Width="100" Height="20"
+															 BorderThickness="0"
+															 Background="Transparent"
+															 VerticalContentAlignment="Center"
+															 IsReadOnly="True"
+															 Text="{Binding Rank, Mode=OneWay}"/>
+													<ComboBox x:Name="comboBox"
+															  Width="100" Height="20"
+															  ItemsSource="{Binding DataContext.Ranks, RelativeSource={RelativeSource AncestorType={x:Type Window}}, Mode=OneTime}"
+															  SelectedIndex="0"
+															  SelectedItem="{Binding Rank, Mode=TwoWay}"
+															  Visibility="Collapsed"/>
+												</Grid>
+
+												<ControlTemplate.Triggers>
+													<Trigger Property="IsKeyboardFocusWithin" Value="True">
+														<Setter TargetName="comboBox" Property="Visibility" Value="Visible"/>
+													</Trigger>
+												</ControlTemplate.Triggers>
+											</ControlTemplate>
+										</ContentControl.Template>
+									</ContentControl>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+					</GridView.Columns>
+				</GridView>
+			</ListView.View>
+		</ListView>
+
+		<ContentControl Width="120" Margin="10" HorizontalAlignment="Left">
+			<ContentControl.Template>
+				<ControlTemplate TargetType="{x:Type ContentControl}">
+					<Grid>
+						<local:MouseFocusableTextBlock Width="100" Height="20"
+													   Text="{Binding Members[0].Rank, Mode=OneWay}"/>
+
+						<ComboBox x:Name="comboBox"
+								  Width="100" Height="20"
+								  ItemsSource="{Binding Ranks, Mode=OneTime}"
+								  SelectedIndex="0"
+								  SelectedItem="{Binding Members[0].Rank, Mode=TwoWay}"
+								  Visibility="Collapsed"/>
+					</Grid>
+
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsKeyboardFocusWithin" Value="True">
+							<Setter TargetName="comboBox" Property="Visibility" Value="Visible"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</ContentControl.Template>
+		</ContentControl>
+	</StackPanel>
+</Window>
