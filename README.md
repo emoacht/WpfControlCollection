@@ -40,6 +40,10 @@ This is inspired by [Customizing the Caret of a WPF TextBox](https://www.codepro
 
 ### Switchable ComboBox
 
+## Button
+
+### Staged Button
+
 ## License
 
  - MIT License
