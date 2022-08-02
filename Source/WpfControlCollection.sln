@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomCaret", "CustomCaret\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertableList", "InsertableList\InsertableList.csproj", "{A72BE3F0-8371-4E2E-980E-2B5A8BF94907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchableComboBox", "SwitchableComboBox\SwitchableComboBox.csproj", "{4D88F058-2D13-4818-8413-AA24100B5CC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwitchableComboBox", "SwitchableComboBox\SwitchableComboBox.csproj", "{4D88F058-2D13-4818-8413-AA24100B5CC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StagedButton", "StagedButton\StagedButton.csproj", "{D8B67210-C561-42FE-8BA2-4067E28BE054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{4D88F058-2D13-4818-8413-AA24100B5CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D88F058-2D13-4818-8413-AA24100B5CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D88F058-2D13-4818-8413-AA24100B5CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B67210-C561-42FE-8BA2-4067E28BE054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B67210-C561-42FE-8BA2-4067E28BE054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B67210-C561-42FE-8BA2-4067E28BE054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B67210-C561-42FE-8BA2-4067E28BE054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
