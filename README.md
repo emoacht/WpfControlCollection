@@ -32,6 +32,8 @@ https://user-images.githubusercontent.com/7205690/147396229-565413fc-8200-4783-9
 
 ### NumericUpDown
 
+![Screenshot](Images/NumericUpDown.png)
+
 This is WinForms-like plain old NumericUpDown.
 
 ## TextBox
