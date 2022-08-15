@@ -5,6 +5,7 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <RootNamespace>DialDemo</RootNamespace>
     <Authors>emoacht</Authors>
     <Copyright>Copyright (c) 2022 emoacht</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
