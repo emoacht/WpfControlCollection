@@ -134,7 +134,7 @@
 		<Border HorizontalAlignment="Center" VerticalAlignment="Center"
 				BorderThickness="1"
 				BorderBrush="Gray">
-			<StackPanel Margin="10">
+			<StackPanel Margin="6">
 				<StackPanel Orientation="Horizontal">
 					<Slider x:Name="slider1"
 							Template="{StaticResource SliderPlusHorizontal}"
@@ -146,7 +146,7 @@
 							TickFrequency="50"
 							Value="200" Minimum="0" Maximum="1000"/>
 
-					<TextBlock Width="50" Margin="10,0,0,0" VerticalAlignment="Center"
+					<TextBlock Width="30" Margin="10,0,0,0" VerticalAlignment="Center"
 							   Text="{Binding Value, ElementName=slider1}"/>
 				</StackPanel>
 
@@ -162,7 +162,7 @@
 							TickFrequency="1"
 							Value="10" Minimum="0" Maximum="100"/>
 
-					<TextBlock Width="50" Margin="10,0,0,0" VerticalAlignment="Center"
+					<TextBlock Width="30" Margin="10,0,0,0" VerticalAlignment="Center"
 							   Text="{Binding Value, ElementName=slider2}"/>
 				</StackPanel>
 			</StackPanel>
