@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StagedButton", "StagedButto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumericUpDown", "NumericUpDown\NumericUpDown.csproj", "{CA9B2463-3035-40CA-894C-59E3B23541DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderPlus", "SliderPlus\SliderPlus.csproj", "{0E81DC3C-9C00-497C-BF65-369D32AC8E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SliderPlus", "SliderPlus\SliderPlus.csproj", "{0E81DC3C-9C00-497C-BF65-369D32AC8E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndTextBox", "EndTextBox\EndTextBox.csproj", "{D90C425E-4B2E-43D6-B649-C30BA707CFC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{0E81DC3C-9C00-497C-BF65-369D32AC8E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E81DC3C-9C00-497C-BF65-369D32AC8E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E81DC3C-9C00-497C-BF65-369D32AC8E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D90C425E-4B2E-43D6-B649-C30BA707CFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90C425E-4B2E-43D6-B649-C30BA707CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90C425E-4B2E-43D6-B649-C30BA707CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90C425E-4B2E-43D6-B649-C30BA707CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
