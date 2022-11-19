@@ -56,6 +56,8 @@ This is inspired by [Customizing the Caret of a WPF TextBox](https://www.codepro
 
 ## Button
 
+### Clip Shape Button
+
 ### Staged Button
 
 ## License
