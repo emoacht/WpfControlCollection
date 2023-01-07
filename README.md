@@ -44,7 +44,7 @@ This is WinForms-like plain old NumericUpDown.
 
 ### Custom Caret
 
-This is inspired by [Customizing the Caret of a WPF TextBox](https://www.codeproject.com/Articles/633935/Customizing-the-Caret-of-a-WPF-TextBox) but when FlowDirection is `RightToLeft`, the movement of caret is incomplete (and unlikely to be be completed).
+This is inspired by [Customizing the Caret of a WPF TextBox](https://www.codeproject.com/Articles/633935/Customizing-the-Caret-of-a-WPF-TextBox) but when FlowDirection is `RightToLeft`, the movement of caret is incomplete (and unlikely to be completed).
 
 ### End TextBox
 
