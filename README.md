@@ -28,6 +28,10 @@ https://user-images.githubusercontent.com/7205690/147396229-565413fc-8200-4783-9
 
 ![Screenshot](Images/FlaskProgressBar.png)
 
+### Free Path ProgressBar
+
+![Screenshot](Images/FreePathProgressBar.png)
+
 ## Slider
 
 ### NumericUpDown
