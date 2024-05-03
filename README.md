@@ -44,6 +44,10 @@ This is WinForms-like plain old NumericUpDown.
 
 ![Screenshot](Images/SliderPlus.png)
 
+## TextBlock
+
+### Timer TextBlock
+
 ## TextBox
 
 ### Custom Caret
