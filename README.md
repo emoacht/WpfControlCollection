@@ -32,6 +32,10 @@ https://user-images.githubusercontent.com/7205690/147396229-565413fc-8200-4783-9
 
 ![Screenshot](Images/FreePathProgressBar.png)
 
+### Segmented ProgressBar
+
+![Screenshot](Images/SegmentedProgressBar.png)
+
 ## Slider
 
 ### NumericUpDown
