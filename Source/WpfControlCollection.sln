@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndTextBox", "EndTextBox\En
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipShapeButton", "ClipShapeButton\ClipShapeButton.csproj", "{E6D5DC20-FB11-4BAF-9D11-E9DF8CE366A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreePathProgressBar", "FreePathProgressBar\FreePathProgressBar.csproj", "{72DB1BE0-2D96-4C34-8D3F-C137E60E36EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreePathProgressBar", "FreePathProgressBar\FreePathProgressBar.csproj", "{72DB1BE0-2D96-4C34-8D3F-C137E60E36EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerTextBlock", "TimerTextBlock\TimerTextBlock.csproj", "{3F9227CA-62A5-46DC-AEE4-D33A29E02279}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimerTextBlock", "TimerTextBlock\TimerTextBlock.csproj", "{3F9227CA-62A5-46DC-AEE4-D33A29E02279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentedProgressBar", "SegmentedProgressBar\SegmentedProgressBar.csproj", "{19A2E76E-1A98-4DD9-80AD-A99EF29ED572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{3F9227CA-62A5-46DC-AEE4-D33A29E02279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9227CA-62A5-46DC-AEE4-D33A29E02279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F9227CA-62A5-46DC-AEE4-D33A29E02279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A2E76E-1A98-4DD9-80AD-A99EF29ED572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A2E76E-1A98-4DD9-80AD-A99EF29ED572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A2E76E-1A98-4DD9-80AD-A99EF29ED572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A2E76E-1A98-4DD9-80AD-A99EF29ED572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
