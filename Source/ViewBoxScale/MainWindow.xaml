@@ -1,0 +1,26 @@
+﻿<Window x:Class="ViewBoxScale.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:ViewBoxScale"
+        mc:Ignorable="d"
+        Title="ViewBox with Scale"
+		Width="800" Height="500">
+    <Grid>
+		<Viewbox>
+			<i:Interaction.Behaviors>
+				<local:ViewBoxScaleBehavior x:Name="Behavior"/>
+			</i:Interaction.Behaviors>
+
+			<Border BorderThickness="1"
+					BorderBrush="Navy">
+				<StackPanel Margin="10">
+					<TextBlock Text="{Binding ElementName=Behavior, Path=ScaleX, StringFormat=ScaleX: {0:f2}}"/>
+					<TextBlock Text="{Binding ElementName=Behavior, Path=ScaleY, StringFormat=ScaleY: {0:f2}}"/>
+				</StackPanel>
+			</Border>
+		</Viewbox>
+	</Grid>
+</Window>
